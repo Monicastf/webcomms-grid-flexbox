@@ -1,0 +1,24 @@
+*{
+    box-sizing:border-box;
+    /*makes the margin/padding stay within the limit, regular margin and padding goes outside*/
+}
+main{
+    display:flex;
+    /*to make into flexbox mode, only want main to be affected*/
+}
+/*add in borders while working to see more easily*/
+section{
+    border:1px solid black;
+    /* columns are not all the same sizes*/
+    flex:1;
+    /*makes them all the same width*/
+}
+section#appetizers{
+    flex:2;
+    /*double the width of the rest*/
+}
+section#appetizers, section#mains, section#desserts{
+    /*adding a comma applies it to multiple sections*/
+    /*could've also used classes*/
+    background-color: grey
+}
