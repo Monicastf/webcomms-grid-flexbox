@@ -1,0 +1,23 @@
+*{
+        box-sizing:border-box;
+}
+main{
+    display:grid;
+    /*no visible change because you havent chosen how many columns and rows to include, currently 1x1*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*how many colomns you want, can also do grid-templat-rows*/
+    /*as many rows as you need to fit the coloumns specified*/
+    /*can use percentages, pixels, or fr (fraction)*/
+    /*fr scales the best to other device screens*/
+    grid-gap:2rem;
+}
+body{
+    background-color: red;
+}
+section{
+    background-color: white;
+    border: 3px solid black;
+    padding:1rem;
+    /*fr is good for grid or flexboxes, for smaller units rem is better*/
+}
+    /*inline is for styling one thing on one page*/
